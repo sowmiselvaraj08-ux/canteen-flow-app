@@ -48,6 +48,54 @@ const CustomerDashboard = () => {
     }
 
     fetchMenuItems();
+    
+    // Subscribe to order status updates for notifications
+    const channel = supabase
+      .channel('order-notifications')
+      .on(
+        'postgres_changes',
+        {
+          event: 'UPDATE',
+          schema: 'public',
+          table: 'orders',
+          filter: `customer_id=eq.${user.id}`
+        },
+        (payload) => {
+          const newStatus = payload.new.status;
+          const oldStatus = payload.old.status;
+          
+          if (newStatus !== oldStatus) {
+            let message = "";
+            switch(newStatus) {
+              case "accepted":
+                message = "Your order has been accepted!";
+                break;
+              case "preparing":
+                message = "Your order is being prepared!";
+                break;
+              case "ready":
+                message = "Your order is ready for pickup!";
+                break;
+              case "declined":
+                message = "Sorry, your order was declined.";
+                break;
+              case "completed":
+                message = "Order completed. Thank you!";
+                break;
+            }
+            
+            toast({
+              title: "Order Update",
+              description: message,
+            });
+          }
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
   }, [user, userRole, navigate]);
 
   const fetchMenuItems = async () => {

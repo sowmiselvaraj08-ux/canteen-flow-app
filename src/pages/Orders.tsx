@@ -30,6 +30,36 @@ const Orders = () => {
     }
 
     fetchOrders();
+    
+    // Subscribe to realtime order updates
+    const channel = supabase
+      .channel('customer-orders')
+      .on(
+        'postgres_changes',
+        {
+          event: 'UPDATE',
+          schema: 'public',
+          table: 'orders',
+          filter: `customer_id=eq.${user.id}`
+        },
+        (payload) => {
+          const newStatus = payload.new.status;
+          const oldStatus = payload.old.status;
+          
+          if (newStatus !== oldStatus) {
+            toast({
+              title: "Order Status Updated",
+              description: `Your order is now ${newStatus}`,
+            });
+            fetchOrders();
+          }
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
   }, [user, navigate]);
 
   const fetchOrders = async () => {
