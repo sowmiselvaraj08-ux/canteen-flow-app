@@ -17,31 +17,31 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 20 14% 12%;
 
-    --primary: 25 95% 53%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 76% 36%;
+    --secondary: 210 80% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 20 8% 45%;
+    --muted: 210 20% 92%;
+    --muted-foreground: 210 8% 45%;
 
-    --accent: 25 95% 53%;
+    --accent: 199 89% 48%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 15% 88%;
-    --input: 35 15% 88%;
-    --ring: 25 95% 53%;
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 199 89% 48%;
 
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(15 90% 60%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(152 70% 45%) 100%);
-    --shadow-card: 0 2px 8px -2px hsl(20 14% 12% / 0.08);
-    --shadow-card-hover: 0 8px 24px -6px hsl(20 14% 12% / 0.12);
+    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(199 89% 60%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(210 80% 45%) 0%, hsl(210 75% 55%) 100%);
+    --shadow-card: 0 2px 8px -2px hsl(199 50% 30% / 0.08);
+    --shadow-card-hover: 0 8px 24px -6px hsl(199 50% 30% / 0.12);
     
     --veg-badge: 142 76% 36%;
     --nonveg-badge: 0 70% 45%;
@@ -57,24 +57,24 @@ All colors MUST be HSL.
     --popover: 20 14% 10%;
     --popover-foreground: 35 15% 95%;
 
-    --primary: 25 95% 53%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 142 76% 36%;
+    --secondary: 210 80% 45%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 20 10% 18%;
-    --muted-foreground: 35 8% 60%;
+    --muted: 210 10% 18%;
+    --muted-foreground: 210 8% 60%;
 
-    --accent: 25 95% 53%;
+    --accent: 199 89% 48%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 35 15% 95%;
 
-    --border: 20 10% 18%;
-    --input: 20 10% 18%;
-    --ring: 25 95% 53%;
+    --border: 210 10% 18%;
+    --input: 210 10% 18%;
+    --ring: 199 89% 48%;
     
     --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
     --shadow-card-hover: 0 8px 24px -6px hsl(0 0% 0% / 0.4);
