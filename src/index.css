@@ -17,29 +17,29 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 20 14% 12%;
 
-    --primary: 199 89% 48%;
+    --primary: 199 98% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 80% 45%;
+    --secondary: 205 95% 52%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 20% 92%;
-    --muted-foreground: 210 8% 45%;
+    --muted: 210 25% 90%;
+    --muted-foreground: 210 10% 40%;
 
-    --accent: 199 89% 48%;
+    --accent: 199 98% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 15% 88%;
-    --input: 210 15% 88%;
-    --ring: 199 89% 48%;
+    --border: 210 25% 85%;
+    --input: 210 25% 85%;
+    --ring: 199 98% 55%;
 
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(199 89% 48%) 0%, hsl(199 89% 60%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(210 80% 45%) 0%, hsl(210 75% 55%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(199 98% 55%) 0%, hsl(199 95% 65%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(205 95% 52%) 0%, hsl(205 90% 62%) 100%);
     --shadow-card: 0 2px 8px -2px hsl(199 50% 30% / 0.08);
     --shadow-card-hover: 0 8px 24px -6px hsl(199 50% 30% / 0.12);
     
@@ -57,24 +57,24 @@ All colors MUST be HSL.
     --popover: 20 14% 10%;
     --popover-foreground: 35 15% 95%;
 
-    --primary: 199 89% 48%;
+    --primary: 199 98% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 80% 45%;
+    --secondary: 205 95% 52%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 10% 18%;
-    --muted-foreground: 210 8% 60%;
+    --muted: 210 12% 20%;
+    --muted-foreground: 210 10% 65%;
 
-    --accent: 199 89% 48%;
+    --accent: 199 98% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 35 15% 95%;
 
-    --border: 210 10% 18%;
-    --input: 210 10% 18%;
-    --ring: 199 89% 48%;
+    --border: 210 12% 20%;
+    --input: 210 12% 20%;
+    --ring: 199 98% 55%;
     
     --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
     --shadow-card-hover: 0 8px 24px -6px hsl(0 0% 0% / 0.4);
